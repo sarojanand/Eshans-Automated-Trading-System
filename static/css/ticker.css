@@ -1,0 +1,217 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0A0A0A;
+    color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #1C1C1E;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #BB86FC;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #FF79C6;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 2px solid #BB86FC;
+    border-radius: 8px;
+    background-color: #2C2C2E;
+    color: #EDEDED;
+    font-size: 1.1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #FF79C6;
+    background-color: #1C1C1E;
+}
+
+button[type="submit"] {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #BB86FC;
+    color: #121212;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF79C6;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    background-color: #3700B3;
+    transform: scale(0.95);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #7D7D7D;
+}
+
+footer a {
+    color: #BB86FC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FF79C6;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"] {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Styling for input placeholder */
+input[type="text"]::placeholder {
+    color: #B0B0B0;
+    opacity: 1;
+    transition: color 0.3s ease;
+}
+
+input[type="text"]:focus::placeholder {
+    color: #FF79C6;
+}
+
+/* Adding subtle background pattern */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: -1;
+}
+
+/* Adding glow effect on focus */
+input[type="text"]:focus {
+    box-shadow: 0 0 8px rgba(255, 121, 198, 0.8);
+}
+
+button[type="submit"]:focus {
+    box-shadow: 0 0 8px rgba(255, 121, 198, 0.8);
+}
+
+h1 {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+button[type="submit"] {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input shake animation for error state */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+input[type="text"].error {
+    animation: shake 0.3s;
+    border-color: #FF5555;
+    background-color: #2C1E1E;
+    color: #FF5555;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #7D7D7D;
+    text-align: center;
+}
+
+footer a {
+    color: #BB86FC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FF79C6;
+}

@@ -1,0 +1,17 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2020-11-04 09:30:00-05:00,MLTRADER,d192e8cd05c04b53b578dc34fc67abf8,ZYME,sell,market,new,1,gtc,0.0,1,stock,,,
+2020-11-04 09:30:00-05:00,MLTRADER,d192e8cd05c04b53b578dc34fc67abf8,ZYME,sell,market,fill,1,gtc,0.0,1,stock,40.369998931884766,1239.0,0.0
+2020-11-05 09:30:00-05:00,MLTRADER,38f997a5201448c4b98d14f50604a934,ZYME,sell,market,new,1,gtc,0.0,1,stock,,,
+2020-11-05 09:30:00-05:00,MLTRADER,ecdf25f4b8f5495f83c1c47b5e5e9d72,ZYME,buy,limit,canceled,1,day,0.0,1,stock,,,
+2020-11-05 09:30:00-05:00,MLTRADER,6e517a7311b14a1a9ba65a9bec93e186,ZYME,buy,stop,fill,1,day,0.0,1,stock,43.0,1239.0,0.0
+2020-11-05 09:30:00-05:00,MLTRADER,38f997a5201448c4b98d14f50604a934,ZYME,sell,market,fill,1,gtc,0.0,1,stock,43.0,1744.0,0.0
+2020-11-06 09:30:00-05:00,MLTRADER,00e4cbdc366b4bb69d25137f68c6de2d,ZYME,sell,market,new,1,gtc,0.0,1,stock,,,
+2020-11-06 09:30:00-05:00,MLTRADER,02604993b231447193ea30906165f867,ZYME,buy,limit,canceled,1,day,0.0,1,stock,,,
+2020-11-06 09:30:00-05:00,MLTRADER,10f4618b6bca47aa8512c9ead69d5535,ZYME,buy,stop,fill,1,day,0.0,1,stock,42.939998626708984,1744.0,0.0
+2020-11-06 09:30:00-05:00,MLTRADER,00e4cbdc366b4bb69d25137f68c6de2d,ZYME,sell,market,fill,1,gtc,0.0,1,stock,42.939998626708984,2000.0,0.0
+2020-11-07 09:30:00-05:00,MLTRADER,462d47a829bd49f1a4ecac1f47e150f8,ZYME,buy,limit,canceled,1,day,0.0,1,stock,,,
+2020-11-07 09:30:00-05:00,MLTRADER,71d53832be984ea6995f2f7a9d9c0dab,ZYME,buy,stop,fill,1,day,0.0,1,stock,42.939998626708984,2000.0,0.0
+2022-10-17 09:30:00-04:00,MLTRADER,6323157c5d544fe4a5102b8269a99de2,ZYME,sell,market,new,1,gtc,0.0,1,stock,,,
+2022-10-17 09:30:00-04:00,MLTRADER,6323157c5d544fe4a5102b8269a99de2,ZYME,sell,market,fill,1,gtc,0.0,1,stock,5.559999942779541,8709.0,0.0
+2022-10-18 09:30:00-04:00,MLTRADER,ec69efcda4094fa58805f61d1c755319,ZYME,buy,limit,canceled,1,day,0.0,1,stock,,,
+2022-10-18 09:30:00-04:00,MLTRADER,7a99057d4d934246bb5795610ee31f54,ZYME,buy,stop,fill,1,day,0.0,1,stock,5.869999885559082,8709.0,0.0

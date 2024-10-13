@@ -1,0 +1,13 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2020-07-31 09:30:00-04:00,MLTRADER,1735993b893b4cc294b15cb0611d59de,SSNC,buy,market,new,1,gtc,0.0,1,stock,,,
+2020-07-31 09:30:00-04:00,MLTRADER,1735993b893b4cc294b15cb0611d59de,SSNC,buy,market,fill,1,gtc,0.0,1,stock,57.58000183105469,868.0,0.0
+2020-11-20 09:30:00-05:00,MLTRADER,dd6391c387374741b25b8174e91953f4,SSNC,sell,stop,canceled,1,day,0.0,1,stock,,,
+2020-11-20 09:30:00-05:00,MLTRADER,c542731b4aa84b21a22ebf58902f5364,SSNC,sell,limit,fill,1,day,0.0,1,stock,69.09600219726562,868.0,0.0
+2021-11-01 09:30:00-04:00,MLTRADER,a55782f7f37a4d3ba88b487393f8824a,SSNC,buy,market,new,1,gtc,0.0,1,stock,,,
+2021-11-01 09:30:00-04:00,MLTRADER,a55782f7f37a4d3ba88b487393f8824a,SSNC,buy,market,fill,1,gtc,0.0,1,stock,78.23999786376953,704.0,0.0
+2021-12-01 09:30:00-05:00,MLTRADER,84a25f556d044f02b97e66ebb575a753,SSNC,sell,limit,canceled,1,day,0.0,1,stock,,,
+2021-12-01 09:30:00-05:00,MLTRADER,e6f84fb16b5745ad9163a2eb2c3b2073,SSNC,sell,stop,fill,1,day,0.0,1,stock,74.32799797058105,704.0,0.0
+2022-06-16 09:30:00-04:00,MLTRADER,6006060523a14dd9ad444308b3914fc6,SSNC,sell,market,new,1,gtc,0.0,1,stock,,,
+2022-06-16 09:30:00-04:00,MLTRADER,6006060523a14dd9ad444308b3914fc6,SSNC,sell,market,fill,1,gtc,0.0,1,stock,55.29999923706055,971.0,0.0
+2022-06-17 09:30:00-04:00,MLTRADER,a1e0205085fc4fd49344d2e521f9c739,SSNC,buy,limit,canceled,1,day,0.0,1,stock,,,
+2022-06-17 09:30:00-04:00,MLTRADER,aee209cf710d4eb792a59f8a21e03496,SSNC,buy,stop,fill,1,day,0.0,1,stock,55.29999923706055,971.0,0.0

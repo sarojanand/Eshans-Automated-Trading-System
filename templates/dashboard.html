@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en
+">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <img src="EATS MLTRADER LOGO.png">
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="card">
+            <h2>Total Trades</h2>
+            <p>{{ metrics.total_trades }}</p>
+        </div>
+        <div class="card">
+            <h2>Average Return (%)</h2>
+            <p>{{ metrics.average_return }}</p>
+        </div>
+        <div class="card">
+            <h2>Current Balance</h2>
+            <p>${{ metrics.current_balance }}</p>
+        </div>
+        <div class="card">
+            <h2>Symbol</h2>
+            <p>{{ metrics.symbol }}</p>
+        </div>
+        <div class="card">
+            <form method="POST">
+                <button class="button" type="submit">Start Website</button>
+            </form> 
+        </div>
+        <div class="footer">
+            <p>2024 EATS Dashboard</p>
+            <p>Powered by <a href="#">MLTRADER</a></p>
+            <p>Please note that the dashboard is currently not functional. This will be a feature in future updates.</p>
+        </div>
+    </div>
+</body>
+</html>

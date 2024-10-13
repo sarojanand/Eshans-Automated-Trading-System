@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Ticker</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ticker.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Ticker Symbol</h1>
+        <form method="POST" action="{{ url_for('index') }}">
+            <input type="text" name="ticker" placeholder="Enter ticker here" required>
+            <button type="submit">Start</button>
+        </form>
+        <footer>
+            <p>2024 EATS MLTRADER</p></p>
+            <p>Powered by <a href="#">MLTRADER</a></p>
+        </footer>
+    </div>
+</body>
+</html>
