@@ -6,7 +6,6 @@ from lumibot.brokers import Alpaca
 from dotenv import load_dotenv
 from lumibot.backtesting import YahooDataBacktesting    
 from MLTRADER import MLTRADER
-import pprint
 from yahooquery import Ticker
 from multiprocessing import Process
 
