@@ -15,8 +15,6 @@ import matplotlib
 from dotenv import load_dotenv
 import colorama
 from colorama import Fore
-import sounddevice as sd
-import soundfile as sf
 import logging
 from _MLTRADER import _MLTRADER
 from alpaca_trade_api import REST
@@ -132,32 +130,12 @@ class MLTRADER(_MLTRADER):
         """
         if level == 'INFO':
             print(Fore.GREEN + f"{message}") 
-            info = 'info.mp3'
-            # Extract data and sampling rate from file
-            dataI, fsI = sf.read(info, dtype='float32')
-            sd.play(dataI, fsI)
-            sd.wait()
         elif level == 'WARNING':
             print(Fore.YELLOW + f"WARNING: {message}")
-            warning = 'warning.mp3'
-            # Extract data and sampling rate from file
-            dataW, fsW = sf.read(warning, dtype='float32')
-            sd.play(dataW, fsW)
-            sd.wait()
         elif level == 'ALERT':
             print(Fore.BLACK + f"ALERT: {message}")
-            alert = 'alert.mp3'
-            # Extract data and sampling rate from file
-            dataA, fsA = sf.read(alert, dtype='float32')
-            sd.play(dataA, fsA)
-            sd.wait()
         elif level == 'ERROR':
             print(Fore.RED + f"ERROR: {message}")
-            error = 'error.mp3'
-            # Extract data and sampling rate from file
-            dataE, fsE = sf.read(error, dtype='float32')
-            sd.play(dataE, fsE)
-            sd.wait()
         elif not level == 'ALERT' or not level == 'WARNING' or not level == 'INFO' or not level == 'ERROR':
             raise ValueError('Level must be ALERT, WARNING, ERROR or INFO')
         
