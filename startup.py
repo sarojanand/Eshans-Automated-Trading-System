@@ -1,16 +1,8 @@
 from colorama import Fore
 import colorama
-import sounddevice as sd
-import soundfile as sf
 
 
 def startup():
-    startup = 'startup.wav'
-    # Extract data and sampling rate from file
-    dataST, fsST = sf.read(startup, dtype='float32')
-    sd.play(dataST, fsST)
-    sd.wait()
-
     colorama.init(autoreset=True)
 
 
