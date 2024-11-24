@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/ticker.css') }}">
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            </a>
+        </div>
+    </header>
     <div class="container">
         <h1>Enter Ticker Symbol</h1>
         <form method="POST" action="{{ url_for('index') }}">
