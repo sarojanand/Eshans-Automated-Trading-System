@@ -5,6 +5,28 @@
     box-sizing: border-box;
 }
 
+.logo-container {
+    display: inline-block;
+}
+
+.logo {
+    height: 50px; /* Adjust the size of the logo */
+    width: auto;
+    vertical-align: middle; /* Align the logo vertically */
+}
+
+header {
+    position: fixed; /* Keep the logo fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the header spans the page width */
+    background-color: #0A0A0A; /* Optional: Background for header */
+    z-index: 1000; /* Keep it above other elements */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #0A0A0A;
