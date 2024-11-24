@@ -8,7 +8,13 @@
 </head>
 <body>
 
-    <img src="C:\Users\eshan\OneDrive\Documents\Desktop\python\projects\Eshans Automated Trading System\EATS MLTRADER LOGO.png">
+    <header>
+        <div class="logo-container">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+            </a>
+        </div>
+    </header>
 
     <div class="container">
         <h1>Trading started for ticker: {{ symbol }}</h1>
