@@ -45,9 +45,10 @@ def run_backtest(ticker):
     )
 
 
+    print('Trading completed successfully! Your results are loading...')
     strategy.get_results()
     strategy.load_gui()
-    print('Trading completed successfully! Your results are loading...')
+    strategy.log_cash_and_position_details()
     
 def validate_ticker(summary):
     if not isinstance(summary, dict):
